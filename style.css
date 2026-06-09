@@ -215,3 +215,22 @@ blockquote::before { content: "“"; color: var(--orange); font-size: 80px; disp
 }
 
 .social-icon i { font-size: 34px; line-height: 1; }
+@media (max-width: 768px) {
+  .why {
+    padding-bottom: 0;
+  
+
+  .why-content,
+  .why .container {
+    display: block;
+  }
+
+  .why-text {
+    padding-bottom: 48px;
+  }
+
+  .quote-card {
+    margin-top: 0;
+    padding: 70px 24px;
+  }
+}
