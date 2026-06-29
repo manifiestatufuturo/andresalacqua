@@ -196,11 +196,21 @@ blockquote::before { content: "“"; color: var(--orange); font-size: 80px; disp
   .nav { flex-wrap: wrap; justify-content: center; gap: 14px 20px; }
   .hero-grid, .why-grid, .book-grid, .freebie-grid, .contact-grid { grid-template-columns: 1fr; }
   .why-grid {
-        gap: 60px;
+        gap: 0px;
     }
   .hero-grid { min-height: auto; padding-top: 24px; }
   .hero-image img { margin: 0 auto; max-height: 440px; }
-  .why { background: linear-gradient(180deg, var(--cream-soft) 0%, var(--cream) 50%, var(--navy) 50%, var(--navy-dark) 100%); }
+  .why {
+  background: var(--cream);
+}
+
+.why blockquote {
+  background: linear-gradient(180deg, var(--navy), var(--navy-dark));
+  margin: 40px calc(50% - 50vw) 0;
+  padding: 70px 24px;
+  width: 100vw;
+  box-sizing: border-box;
+}
   blockquote { padding: 30px 0; }
   .book-cover { max-width: 260px; margin: 0 auto; }
   .features { grid-template-columns: 1fr; }
